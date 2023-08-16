@@ -84,3 +84,15 @@ Sumstats
 Intel
 =====
  * [Intel](#/?example=intel-intel-1)
+
+Test
+====
+ * [Test](#/?example = advanced-test)
+
+Tester
+====
+ * [Tester](#/?example = tester-tester)
+
+Input
+=====
+  * [Input Framework](#/?example=advanced-inputFramework)

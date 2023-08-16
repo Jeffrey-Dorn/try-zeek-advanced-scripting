@@ -1,3 +1,4 @@
+title: sets
 #Sets
 
 in zeek sets are used to store unique elements of the same data type.

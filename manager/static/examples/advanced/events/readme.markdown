@@ -1,3 +1,6 @@
+title: events
+pcaps: 
+
 #Events
 ##about events
 events are the backbone of zeek. they are simmilar to functions we handle events with event handlers which are defined just like functions with two differences one you cannot return anything and two you cannot call the handler instead events get called in one of three ways
@@ -9,11 +12,15 @@ read more[here](https://docs.zeek.org/en/current/script-reference/types.html#eve
 you can have multiple handlers for a given event and you can change the execution order using the &priority attribute.
 
 ##file breakdown
-file 01 is simple and is just there to help you learn a little bit about the connection record.
+file 01 is simple and is just there to help you learn a little bit about the connection record. if the connection record is still confusing then go to docs.zeek.org and search connection record.
 
 file 02 is basically the same however it is the connection info when the connection is removed as such there is a lot more data here compare it to the output from file 01
 
-file 03 shows more built in events
+file 03 shows more built in events look through the outputs and see what data is stored in each connectin event
+
+file 05 we use connection established to look for more specific services or ip addressed where we then display information in the shell
+
+file 06 tracks all of the connection attempts sucessfull connections and removed connections.
 
 file 07 creates a new event handler to create our own event so far we have just been adding new handlers for already existing events. since you cant call an event we use the event statement in order to execute our new event.
 

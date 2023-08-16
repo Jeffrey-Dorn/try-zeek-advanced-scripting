@@ -1,3 +1,6 @@
+title: input
+pcaps:
+
 
 INPUT framework
 The input framework allows Zeek to import large amounts of data from external files. By default, Zeek input reads a tab-separated ASCII file.

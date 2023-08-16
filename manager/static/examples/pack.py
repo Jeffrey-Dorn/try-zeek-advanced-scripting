@@ -66,7 +66,6 @@ def pack(example):
                 packed_example[k] = vs[0]
             else:
                 packed_example[k] = vs
-
     return packed_example
 
 def read_index(fn):
@@ -113,7 +112,7 @@ def add_next_and_prev(flattened):
 def main():
     examples = pack_recursive(".")
     flat = flatten(examples)
-
+    
     add_next_and_prev(flat)
 
     with open("examples.json", 'w') as f:
