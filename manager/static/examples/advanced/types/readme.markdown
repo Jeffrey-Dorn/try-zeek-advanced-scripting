@@ -36,3 +36,11 @@ pcaps:
 
 maybe i was a little misleading calling this a quick crash course. If you want to learn more go [here](https://docs.zeek.org/en/master/) then on the left navigate to script reference then types!
 
+
+00 goes through a munch of ip and port comparasion rules
+
+01 is used to show how global scope works in zeek follow the instructions in the comments to get a better understanding
+
+02 we use a redef to expand the value of a set of ips a few notes on redef: a redef cannot happen inside an event and if you want to redefine a const it must happen before zeek\_init
+
+03 uses some conditional checks on some networking datatypes
